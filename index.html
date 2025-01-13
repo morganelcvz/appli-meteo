@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Ville" aria-label="Search">
+              <button class="btn btn-outline-secondary" type="submit">Rechercher</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <section class="app-meteo">
+        <div class="today-meteo" id="todayMeteo">
+
+        </div>
+        <div class="days-meteo">
+            <div class="date">
+                <span class="day">
+                    Lundi <img src="http://openweathermap.org/img/wn/03d@2x.png"> 9° 
+                </span>
+                <span class="day">
+                    Mardi <img src="http://openweathermap.org/img/wn/03d@2x.png"> 10° 
+                </span>
+                <span class="day">
+                    Mercredi <img src="http://openweathermap.org/img/wn/03d@2x.png"> 3° 
+                </span>
+                <span class="preview">
+                    <a href="#">prévisions semaine</a>
+                </span>
+            </div>
+        </div>        
+      </section>
+
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/dd845416b8.js" crossorigin="anonymous"></script>
+    <script src="node_modules\@popperjs\core\dist\umd\popper.js"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
+</body>
+
+</html>
