@@ -1,7 +1,7 @@
 const url = new URLSearchParams(window.location.search);
-const city = url.get('city')
+let city = url.get('city')
 
-if(city == null || city == ""){
+if (city == null || city == "") {
     city = 'Havre'
 }
 
