@@ -50,11 +50,11 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q=havre&lang=fr&units=me
       <div class="bottom">
         <div class="box">
           <p>Vent</p>
-          <span>${data.list[0].wind.speed} km/h</span>
+          <span>${((data.list[0].wind.speed)*3.6).toPrecision(3)} km/h</span>
         </div>
         <div class="box">
           <p>Pression</p>
-          <span>${data.list[0].main.pressure}</span>
+          <span>${data.list[0].main.pressure} Pa</span>
         </div>
       </div>
          `
