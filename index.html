@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meteo</title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -33,7 +33,7 @@
         <a class="btn dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <i class="fa-solid fa-plus"></i>
         </a>
-      
+
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#">Ville</a></li>
           <li><a class="dropdown-item" href="#">Ville 2</a></li>
@@ -44,43 +44,39 @@
   </nav>
   <section class="app-meteo">
     <div class="today-meteo" id="todayMeteo">
-      <div class="title">
-        <span><i class="fa-solid fa-location-dot"></i> Le Havre</span>
-        <p>Lundi 13 janvier 2025 / 18:45</p>
-      </div>
-      <div class="degree">
-        13°
-      </div>
-      <div class="status">Dégagé</div>
-      <div class="temp">6° / 20°</div>
+      
     </div>
     <div class="days-meteo">
       <div class="date">
         <span class="day">
-          Lundi <img src="http://openweathermap.org/img/wn/03d@2x.png"> 9° / 12°
+          <p>Lundi</p> <img src="http://openweathermap.org/img/wn/03d@2x.png"> 9° / 12°
         </span>
         <span class="day">
-          Mardi <img src="http://openweathermap.org/img/wn/03d@2x.png"> 10° / 15°
+          <p>Mardi</p> <img src="http://openweathermap.org/img/wn/10n@2x.png"> 10° / 15°
         </span>
         <span class="day">
-          Mercredi <img src="http://openweathermap.org/img/wn/03d@2x.png"> 3° / 9°
+          <p>Mercredi</p> <img src="http://openweathermap.org/img/wn/03d@2x.png"> 3° / 9°
         </span>
         <div class="collapse" id="collapseExample">
           <span class="day">
-            Jeudi <img src="http://openweathermap.org/img/wn/03d@2x.png"> 3° / 9°
+            <p>Jeudi</p> <img src="http://openweathermap.org/img/wn/01n@2x.png"> 3° / 9°
           </span>
           <span class="day">
-            Vendredi <img src="http://openweathermap.org/img/wn/03d@2x.png"> 3° / 9°
+            <p>Vendredi</p> <img src="http://openweathermap.org/img/wn/03d@2x.png"> 3° / 9°
           </span>
         </div>
-        <button class="btn plusday" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        <button class="btn plusday" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+          aria-expanded="false" aria-controls="collapseExample">
           <i class="fa-solid fa-bars"></i> plus de jours
         </button>
-      </p>
+        </p>
         <span class="preview">
           <a href="#">prévisions semaine</a>
         </span>
       </div>
+    </div>
+    <div class="square-meteo" id="todayPlus">
+
     </div>
   </section>
 
