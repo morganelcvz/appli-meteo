@@ -10,7 +10,7 @@ const object = {
   message: "city not found"
 }
 
-if (object.message == "city not found") {
+if (object.cod == "404") {
   document.getElementById("todayMeteo").innerHTML = `
   <h1>Erreur</h1>
   <h2>Cherchez une autre ville</h2>
