@@ -2,16 +2,16 @@ body {
   padding: 0px;
   margin: 0px;
   background: linear-gradient(0deg, rgb(176, 255, 250) 0%, rgb(151, 216, 220) 40%, rgb(46, 140, 177) 100%);
+  min-height: 100vh;
   height: 100%;
 }
-body .navbar .navbar-toggler {
+body .navbar .nav-search {
   border: 0px;
+  background: transparent;
 }
-body .navbar .navbar-toggler:active {
-  border: 0px;
-}
-body .navbar .navbar-toggler i {
+body .navbar .nav-search i {
   color: #fff;
+  font-size: 1.3rem;
 }
 body .navbar .search {
   border: 1px solid #fff;
@@ -41,6 +41,16 @@ body .app-meteo .today-meteo {
   align-items: flex-start;
   justify-content: flex-start;
   padding: 10px 20px;
+}
+body .app-meteo .today-meteo h1 {
+  font-family: open sans;
+  font-size: 2rem;
+  color: #fff;
+}
+body .app-meteo .today-meteo h2 {
+  font-family: open sans;
+  font-size: 1.4rem;
+  color: #fff;
 }
 body .app-meteo .today-meteo .title {
   display: flex;

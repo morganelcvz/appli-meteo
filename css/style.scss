@@ -2,19 +2,18 @@ body {
     padding: 0px;
     margin: 0px;
     background: linear-gradient(0deg, rgb(176, 255, 250) 0%, rgb(151, 216, 220) 40%, rgb(46, 140, 177) 100%);
+    min-height: 100vh;
     height: 100%;
 
     .navbar {
 
-        .navbar-toggler {
+        .nav-search{
             border: 0px;
-
-            &:active {
-                border:0px;
-            }
+            background:transparent;
 
             i {
                 color: #fff;
+                font-size:1.3rem;
             }
         }
 
@@ -54,6 +53,18 @@ body {
             align-items: flex-start;
             justify-content: flex-start;
             padding: 10px 20px;
+
+            h1 {
+                font-family: open sans;
+                font-size:2rem;
+                color:#fff;
+            }
+
+            h2 {
+                font-family: open sans;
+                font-size:1.4rem;
+                color:#fff;
+            }
 
             .title {
                 display: flex;

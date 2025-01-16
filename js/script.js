@@ -3,6 +3,18 @@ let city = url.get('city')
 
 if (city == null || city == "") {
     city = 'Havre'
+} 
+
+const object = {
+  cod: "404",
+  message: "city not found"
+}
+
+if (object.message == "city not found") {
+  document.getElementById("todayMeteo").innerHTML = `
+  <h1>Erreur</h1>
+  <h2>Cherchez une autre ville</h2>
+  `
 }
 
 fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&lang=fr&units=metric&appid=ee6df9f0e15bebd128db31decab1af46`)
