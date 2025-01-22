@@ -59,10 +59,10 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&lang=fr&units=
                   <span><i class="fa-solid fa-location-dot"></i> ${data.city.name}</span> <p>${moment(data.list[0].dt_txt).format('LLLL')}</p>
                 </div>
                 <div class="degree">
-                 ${(data.list[0].main.temp).toPrecision(2)}°c
+                 ${(Math.round(data.list[0].main.temp))}°c
                 </div>
             <div class="status">${data.list[0].weather[0].description}</div>
-            <div class="temp">${(data.list[0].main.temp_min).toPrecision(2)}° / ${(data.list[0].main.temp_max).toPrecision(2)}°</div>
+            <div class="temp">${(Math.round(data.list[0].main.temp_min))}° / ${(Math.round(data.list[0].main.temp_max))}°</div>
          `
 
         // Affichage des prévisions 5 jours 
@@ -85,7 +85,7 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&lang=fr&units=
               <div class="top">
         <div class="box">
           <p>Ressenti</p>
-          <span>${(data.list[0].main.feels_like).toPrecision(2)}°c</span>
+          <span>${Math.round((data.list[0].main.feels_like))}°c</span>
         </div>
         <div class="box">
           <p>Humidité</p>
@@ -117,7 +117,7 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&lang=fr&units=
           if (count >= 0) {
               myDiv += `
         <span class="day">
-          <p>${moment(element.dt_txt).format('dddd')}</p> <img src="http://openweathermap.org/img/wn/${element.weather[0].icon}.png"> ${(element.main.temp_min).toPrecision(2)}° / ${(element.main.temp_max).toPrecision(2)}°
+          <p>${moment(element.dt_txt).format('dddd')}</p> <img src="http://openweathermap.org/img/wn/${element.weather[0].icon}.png"> ${Math.round((element.main.temp_min))}° / ${Math.round((element.main.temp_max))}°
         </span>
       `
           }
@@ -138,7 +138,7 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&lang=fr&units=
             myDiv += `
              <div class="collapse" id="collapseExample">
       <span class="day">
-        <p>${moment(element.dt_txt).format('dddd')}</p> <img src="http://openweathermap.org/img/wn/${element.weather[0].icon}.png"> ${(element.main.temp_min).toPrecision(2)}° / ${(element.main.temp_max).toPrecision(2)}°
+        <p>${moment(element.dt_txt).format('dddd')}</p> <img src="http://openweathermap.org/img/wn/${element.weather[0].icon}.png"> ${Math.round((element.main.temp_min))}° / ${Math.round((element.main.temp_max))}°
       </span>
       </div>
     `
