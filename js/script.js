@@ -117,7 +117,7 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&lang=fr&units=
           if (count >= 0) {
               myDiv += `
         <span class="day">
-          <p>${moment(element.dt_txt).format('dddd')}</p> <img src="http://openweathermap.org/img/wn/${element.weather[0].icon}.png"> ${Math.round((element.main.temp_min))}° / ${Math.round((element.main.temp_max))}°
+          <p>${moment(element.dt_txt).format('dddd')}</p> <img src="http://openweathermap.org/img/wn/${element.weather[0].icon}.png"> <span>${Math.round((element.main.temp_min))}° / ${Math.round((element.main.temp_max))}°</span>
         </span>
       `
           }
@@ -138,7 +138,7 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&lang=fr&units=
             myDiv += `
              <div class="collapse" id="collapseExample">
       <span class="day">
-        <p>${moment(element.dt_txt).format('dddd')}</p> <img src="http://openweathermap.org/img/wn/${element.weather[0].icon}.png"> ${Math.round((element.main.temp_min))}° / ${Math.round((element.main.temp_max))}°
+        <p>${moment(element.dt_txt).format('dddd')}</p> <img src="http://openweathermap.org/img/wn/${element.weather[0].icon}.png"> <span>${Math.round((element.main.temp_min))}° / ${Math.round((element.main.temp_max))}°</span>
       </span>
       </div>
     `

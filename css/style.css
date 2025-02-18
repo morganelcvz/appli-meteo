@@ -132,6 +132,9 @@ body .app-meteo .days-meteo .date .day p {
   padding: 0px;
   margin: 0px;
 }
+body .app-meteo .days-meteo .date .day span {
+  width: 25%;
+}
 body .app-meteo .days-meteo .date .plusday {
   font-family: open sans;
   color: #fff;
